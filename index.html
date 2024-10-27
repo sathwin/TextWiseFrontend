@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextWise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header-container">
+        <div class="logo-section">
+            <a href="#" onclick="onLogoClick()">
+                <img src="Assets/TextWiseLogo.png" alt="TextWise Logo" class="logo-image">
+            </a>
+            <span class="site-name">TextWise</span>
+        </div>
+        <div class="tagline">
+            Education Anytime, Anywhere – Just a Text Away
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <div id="slide-message">
+            <p>Text "<span class="highlight">Hi</span>" to <span class="highlight">(806) 502-9814</span> to get started</p>
+        </div>
+        <!-- Screenshot Image -->
+        <img src="Assets/Screenshot.png" alt="Screenshot" class="screenshot-image">
+        <!-- Banner Image -->
+        <img src="Assets/Banner1.png" alt="Banner" class="banner-image">
+    </div>
+
+    <!-- About Us Button -->
+    <button id="about-us-btn" onclick="scrollToAbout()">About us</button>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About TextWise</h2>
+        <p>TextWise is an innovative SMS-based learning platform designed to deliver educational content to students and learners worldwide, even in areas with limited internet access. Our mission is to make learning accessible to everyone, regardless of their technological infrastructure.</p>
+        <p>With TextWise, students can receive lessons, take quizzes, and engage with educational material directly through SMS. Our platform caters to various subjects and languages, allowing for a personalized learning experience. Whether you're looking to reinforce basic math skills, learn a new language, or understand fundamental science concepts, TextWise makes it easy to learn on the go.</p>
+    </section>
+
+    <script src="script.js"></script>
+
+<!-- Existing Drawer for login -->
+<div id="drawer" class="drawer">
+    <button id="login-btn" onclick="showLoginModal()">Admin Login</button>
+</div>
+
+<!-- Add this modal for the login form -->
+<div id="login-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeLoginModal()">&times;</span>
+        <h2>Admin Login</h2>
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button onclick="login()">Login</button>
+    </div>
+</div>
+</body>
+</html>

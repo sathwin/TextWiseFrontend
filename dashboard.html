@@ -1,0 +1,33 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard - TextWise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <h2>TextWise</h2>
+            <ul>
+                <li class="active">User Interactions</li>
+                <!-- Add more navigation items as needed -->
+            </ul>
+            <button onclick="logout()">Logout</button>
+        </div>
+        <div class="main-content">
+            <div class="dashboard-header">
+                <h1>User Interactions</h1>
+            </div>
+            <div class="dashboard-content">
+                <h2>Conversations</h2>
+                <div id="messages-container">
+                    <!-- Conversations will be populated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
